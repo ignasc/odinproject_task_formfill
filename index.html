@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Task - Fill in form</title>
+		<link href="css/Normalise.css" rel="stylesheet" type="text/css">
+		<link href="css/form_stylesheet.css" rel="stylesheet" type="text/css">
+		</head>
+		<body>
+
+			<div class="flex-container">
+			
+				<div id="side-image" class="flex-item">
+					<div id="logo-and-brand-container" class="flex-item">
+						<div id="item-logo">Logo</div>
+						<div id="item-brand-name">Brand name</div>
+					</div>
+				</div>
+				
+				<div id="side-content" class="">
+					<div id="side-content-header" class="element-border">Header</div>
+					
+					<div id="side-content-main" class="element-border">
+						<form action="#" method="post" class="element-border" id="form-card">
+						
+						<h1>Fill in the form</h1>
+						
+						<fieldset>
+							<div id="form-input-div-wrap">
+								<label for="first_name">First name:</label>
+								<input type="text" id="first_name" placeholder="Bob">
+							</div>
+							
+							<div id="form-input-div-wrap">
+								<label for="last_name">Last name:</label>
+								<input type="text" id="last_name" placeholder="McBob">
+							</div>
+						</fieldset>
+						
+						<fieldset>
+							<div id="form-input-div-wrap">
+								<label for="email">Email:</label>
+								<input type="email" id="email" placeholder="mymail@example.com">
+							</div>
+							
+							<div id="form-input-div-wrap">
+								<label for="phone_number">Phone number:</label>
+								<input type="number" id="phone_number" placeholder="01234567890">
+							</div>
+						</fieldset>
+						
+						<fieldset>
+							<div id="form-input-div-wrap">
+								<label for="password1">Password:</label>
+								<input type="password" id="password1">
+							</div>
+							
+							<div id="form-input-div-wrap">
+								<label for="password2">Confirm password:</label>
+								<input type="password" id="password2">
+							</div>
+						</fieldset>
+						
+						<fieldset>
+							<label for="info_source">Where did you hear about us?</label>
+							<select name="info-source" class="hover-highlight">
+									<option value="no_selection" selected>Select option</option>
+								<optgroup label="Online">
+									<option value="search_engine">Search engine</option>
+									<option value="social_media">Social media</option>
+									<option value="ads">Ads</option>
+								</optgroup>
+								<optgroup label="Offline">
+									<option value="word_of_mouth">Word of mouth</option>
+									<option value="paper_ad">Newspaper ad</option>
+									<option value="tv_radio_ad">TV/Radio ad</option>
+								</optgroup>
+							</select>
+						</fieldset>
+						
+						<fieldset>
+							<p>Subscribe to our newsletters?</p>
+							<div class="element-border corner-round hover-highlight">
+								<label for="newsletters_yes">Yes</label>
+								<input type="radio" id="newsletters_yes" name="newsletters" value="subscribe_yes">
+							</div>
+							<div class="element-border corner-round hover-highlight">
+								<label for="newsletters_no">No</label>
+								<input type="radio" id="newsletters_no" name="newsletters" value="subscribe_no">
+							</div>
+						</fieldset>
+						
+						<button type="submit">Submit</button>
+						</form>
+					</div>
+					
+					<div id="side-content-footer" class="element-border">Footer</div>
+				</div>
+				
+			</div>
+
+		</body>
+</html>

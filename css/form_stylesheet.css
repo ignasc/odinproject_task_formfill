@@ -1,0 +1,124 @@
+/*body * {
+	border: 1px solid grey;
+}
+*/
+
+/*To remove the inc/dec arrows on number input fields*/
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+body {
+	/*Custom variables*/
+	--max-height: 700px;
+	--max-width: 500px;
+	--background-color: #3c3c3c;
+	--constant-side-margin: 10vw;
+	--constant-top-margin: 2vw;
+}
+
+.flex-container {
+	display: flex;/*This flex is for the whole container*/
+	height: var(--max-height);
+	margin-left: var(--constant-side-margin);
+	margin-right: var(--constant-side-margin);
+	margin-top: var(--constant-top-margin);
+}
+
+.flex-item {
+	display: flex;
+}
+.flex-item-dir-column {
+	flex-direction: column;
+}
+
+#side-image {
+	/*background: no-repeat center/100% url("../img/halie-west-25xggax4bSA-unsplash.jpg");*/
+	overflow: hidden; /*for background image*/
+	
+	flex-grow:4;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#side-content {
+	display: flex;/*this flex is for arranging header, main and footer in a column layout*/
+	flex-direction: column;
+	flex-grow:8;
+}
+#side-content-header {
+	flex-grow:3;
+}
+#side-content-main {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	flex-grow:6;
+}
+#side-content-footer {
+	flex-grow:3;
+}
+
+#image-file {
+	max-height: var(--max-height);
+}
+
+#logo-and-brand-container {
+	
+}
+#item-logo {
+	flex-grow:2;
+}
+#item-brand-name {
+	flex-grow:4;
+}
+
+#form-card {
+	border-radius: 1rem;
+	padding: 4rem;
+}
+
+fieldset {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+#form-input-div-wrap {
+	display: flex;
+	flex-direction: column;
+}
+
+label, input {
+	margin: 0.1rem;
+}
+input:hover {
+	box-shadow: 0px 0px 0px 1px grey;
+}
+
+.hover-highlight:hover {
+	box-shadow: 0px 0px 0px 1px grey;
+}
+
+.element-border {
+	border: 1px solid grey;
+}
+.corner-round {
+	border-radius: 5px;
+}
+
+button {
+	margin: 1rem; /*add spacing between buttons and everything else*/
+}
+button:hover {
+	background-color: rgb(230,255,230);
+}
