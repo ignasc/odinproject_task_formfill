@@ -31,6 +31,10 @@ body {
 	margin-left: var(--constant-side-margin);
 	margin-right: var(--constant-side-margin);
 	margin-top: var(--constant-top-margin);
+	border: 1px solid grey;
+	border-radius: 20px;
+	overflow: hidden;
+	margin-bottom: 10px;
 }
 
 .flex-item {
@@ -41,8 +45,9 @@ body {
 }
 
 #side-image {
-	/*background: no-repeat center/100% url("../img/halie-west-25xggax4bSA-unsplash.jpg");*/
+	background: no-repeat center/100% url("../img/halie-west-25xggax4bSA-unsplash.jpg");
 	overflow: hidden; /*for background image*/
+	background-size: cover;
 	
 	flex-grow:4;
 	flex-direction: column;
@@ -56,6 +61,7 @@ body {
 }
 #side-content-header {
 	flex-grow:3;
+	text-align: center;
 }
 #side-content-main {
 	display: flex;
@@ -66,6 +72,7 @@ body {
 }
 #side-content-footer {
 	flex-grow:3;
+	text-align: center;
 }
 
 #image-file {
@@ -73,13 +80,23 @@ body {
 }
 
 #logo-and-brand-container {
-	
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 #item-logo {
-	flex-grow:2;
+	background: no-repeat center/100% url("../img/odin-lined.png");
+	overflow: hidden; /*for background image*/
+	background-size: cover;
+
+	max-width: 80px;
 }
 #item-brand-name {
 	flex-grow:4;
+	align-self: stretch;
+	background-color: rgb(0, 0, 0, 0.5);
+	color: aliceblue;
+	text-align: center;
 }
 
 #form-card {
@@ -118,7 +135,11 @@ input:hover {
 
 button {
 	margin: 1rem; /*add spacing between buttons and everything else*/
+	
 }
 button:hover {
-	background-color: rgb(230,255,230);
+	background-color: rgb(163, 206, 163);
+}
+#btn-reset:hover {
+	background-color: rgb(206, 163, 163);
 }
