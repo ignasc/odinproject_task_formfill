@@ -137,9 +137,15 @@ button {
 	margin: 1rem; /*add spacing between buttons and everything else*/
 	
 }
+
 button:hover {
 	background-color: rgb(163, 206, 163);
 }
+
 #btn-reset:hover {
 	background-color: rgb(206, 163, 163);
+}
+
+input:invalid {
+	border: 1px solid red;
 }
