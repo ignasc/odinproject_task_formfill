@@ -3,6 +3,11 @@
 }
 */
 
+@font-face {
+	font-family: "NorseFont";
+	src: url("../fonts/Norse-Bold.otf");
+}
+
 /*To remove the inc/dec arrows on number input fields*/
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
@@ -101,9 +106,12 @@ body {
 }
 #item-brand-name {
 	flex-grow:4;
-	align-self: center;
+	align-self: stretch;
+	align-content: center;
 	color: aliceblue;
 	text-align: center;
+	font-size: 400%;
+	font-family: "NorseFont";
 }
 #image-credits {
 	text-align: center;
